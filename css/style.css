@@ -29,6 +29,11 @@ video#bgvid {
 	top: 40%;
 	left: 26%;
 }
+#Java {
+	postion: fixed;
+	top: 40%
+	left: 30%;
+}
 #Spacer {
 	position: fixed;
 	top: 34%;
