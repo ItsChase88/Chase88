@@ -24,9 +24,19 @@ video#bgvid {
 	top: 40%;
 	left: 26%;
 }
-#Games {
+#Twitch {
 	position: fixed;
 	top: 40%;
+	left: 30%;
+}
+#Ravenger {
+	position: fixed;
+	top: 40%;
+	left: 26%;	
+}
+#Games {
+	position: fixed;
+	top: 60%;
 	left: 30%;
 }
 #Spacer {
