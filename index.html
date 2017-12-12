@@ -9,13 +9,25 @@
         color: white;
         background-color: black;
       }
+      .loader {
+        border: 16px solid #f3f3f3; /* Light grey */
+        border-top: 16px solid #3498db; /* Blue */
+        border-radius: 50%;
+        width: 120px;
+        height: 120px;
+        animation: spin 2s linear infinite;
+       }
+       @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+       }
     </style>
   </head>
   <body background="resources/bg.png">
 <h1>We're sorry, but you've not payed for the SUPER MEGA package, so you are not allowed to vist this site.<h1>
 <h2>Please buy the package <a href="https://battleforthe.net">here</a> to continue browsing.<h2>
 <p>
-<i class="fa fa-spinner w3-spin" style="font-size:64px"></i>
+<div class="loader"></div>
 </p>
 <h3>The FCC will end net neutrality on Dec 14th if we don't convince Congress to stop them. <a href="https://www.battleforthenet.com/breaktheinternet/">Join the Protest</a> and <a href="https://www.battleforthenet.com/">Contact Congress</a> to save net neutrality.<h3>
   </body>
