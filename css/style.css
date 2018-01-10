@@ -15,37 +15,37 @@ video#bgvid {
     background-size: cover; 
 }
 #logo {
-	position: fixed;
+	position: relative;
 	top: 30%;
 	left: 24%;
 }
 #spacer1 {
-	position: fixed;
+	position: relative;
 	top: 34%;
 	left: 26%;
 }
 #ravenger {
-	position: fixed;
+	position: relative;
 	top: 40%;
 	left: 26%;	
 }
 #twitch {
-	position: fixed;
+	position: relative;
 	top: 40%;
 	left: 40%;
 }
 #spacer2 {
-	position: fixed;
+	position: relative;
 	top: 34%;
 	left: 26%;
 }
 #youtube {
-	position: fixed;
+	position: relative;
 	top: 40%;
 	left: 26%;
 }
 #games {
-	position: fixed;
+	position: relative;
 	top: 60%;
 	left: 30%;
 }
