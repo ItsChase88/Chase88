@@ -19,27 +19,27 @@ video#bgvid {
 	top: 30%;
 	left: 24%;
 }
-#YT {
+#youtube {
 	position: fixed;
 	top: 40%;
 	left: 26%;
 }
-#Twitch {
+#twitch {
 	position: fixed;
 	top: 40%;
 	left: 30%;
 }
-#Ravenger {
+#ravenger {
 	position: fixed;
 	top: 40%;
 	left: 26%;	
 }
-#Games {
+#games {
 	position: fixed;
 	top: 60%;
 	left: 30%;
 }
-#Spacer {
+#spacer1 {
 	position: fixed;
 	top: 34%;
 	left: 26%;
