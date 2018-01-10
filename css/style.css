@@ -16,36 +16,36 @@ video#bgvid {
 }
 #logo {
 	position: relative;
-	top: 30%;
-	left: 24%;
+	top: 30px;
+	left: 24px;
 }
 #spacer1 {
 	position: relative;
-	top: 34%;
-	left: 26%;
+	top: 34px;
+	left: 26px;
 }
 #ravenger {
 	position: relative;
-	top: 40%;
-	left: 26%;	
+	top: 40px;
+	left: 26px;	
 }
 #twitch {
 	position: relative;
-	top: 40%;
-	left: 40%;
+	top: 40px;
+	left: 40px;
 }
 #spacer2 {
 	position: relative;
-	top: 34%;
-	left: 26%;
+	top: 34px;
+	left: 26px;
 }
 #youtube {
 	position: relative;
-	top: 40%;
-	left: 26%;
+	top: 40px;
+	left: 26px;
 }
 #games {
 	position: relative;
-	top: 60%;
-	left: 30%;
+	top: 60px;
+	left: 30px;
 }
