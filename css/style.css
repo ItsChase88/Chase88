@@ -15,7 +15,7 @@ video#bgvid {
     background-size: cover; 
 }
 #logo {
-	position: relative;
+	position: absolute;
 	top: 30px;
 	left: 24px;
 }
