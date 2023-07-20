@@ -3,6 +3,13 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Chase88</title>
+		
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/site.webmanifest">
+		<link rel="stylesheet" href="css/animate.min.css">
+		
 		<style>
 			video#bgvid { 
 			    position: fixed;
@@ -20,48 +27,89 @@
 			    background: url(polina.jpg) no-repeat;
 			    background-size: cover; 
 			}
+			.content {
+				margin: 10%;
+			}
+			.spacer {
+				border-top: 5px solid white;
+				border-radius: 25px;
+				margin:0;
+				margin-top:5px;
+				width:190px;
+			}
+			.ravenger {
+				margin-left: 60px;
+				margin-top:5px;
+			}
+			.refresh {
+				margin-left: 60px;
+			}
+			.youtube {
+				margin-left: 60px;
+			}
+			.twitch {
+				margin-left: 60px;
+			}
 		</style>
-		<link rel="stylesheet" href="css/animate.min.css">
 		
-		<audio autoplay id="myaudio">
-			<source src="resources/sitemusic.mp3">
-		<p>If you can see this, sadly your browser does not support the audio element.</p>
+		<!--Website Audio-->
+		<iframe src="resources/silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+		
+		<audio id="divAudio">
+		   <source src="resources/sitemusic.mp3" type="audio/mp3">
 		</audio>
-		
-		<video autoplay muted loop id="bgvid">
-		  <source src="resources/Background.mp4" type="video/mp4">
-		</video>
+
 		<script>
-		  var audio = document.getElementById("myaudio");
-		  audio.volume = 0.2;
+		   var vAudio = document.getElementById("divAudio");
+		   vAudio.volume = 0.2;
+		   var hasInit = false;
+		   function playMusic()
+		   {
+			  if(!hasInit)
+			  {
+				  hasInit = true;
+				  vAudio.play();
+			  }
+		   }
 		</script>
-	</head>
-	<body background="resources/bg.png">
-		<div id="content">
-			<div id="logo">
-				<img class="item animated bounceIn" draggable="false" src="resources/logo.png"></img>
-			</div>
 		
-			<div id="spacer1">
-		 		<img src="resources/spacer.png" draggable="false"></img>
-			</div>
+		<!--Website Video-->
+		<video autoplay muted loop id="bgvid">
+		  <source src="resources/background.mp4" type="video/mp4">
+		</video>
+	</head>
 	
-			<div id="ravenger">
-				<a href="https://Ravenger.net"><img class="item animated pulse" draggable="false" src="resources/ravenger.png"></img></a>
+	<div onclick="playMusic()">
+		<body background="resources/bg.png">
+			<div class="content">
+				<div class="logo">
+					<img class="item animated bounceIn" draggable="false" src="resources/logo.png"></img>
+				</div>
+				
+				<hr class="spacer"></hr>
+		
+				<div class="ravenger">
+					<a href="https://Ravenger.net">
+						<img class="item animated pulse" draggable="false" src="resources/ravenger.png"></img>
+					</a>
+				</div>
+				<div class="refresh">
+					<a href="https://refreshgaming.net">
+						<img class="item animated pulse" draggable="false" src="resources/refresh.png"></img>
+					</a>
+				</div>
+				<div class="youtube">
+					<a href="https://www.youtube.com/@Chase88">
+						<img class="item animated pulse" draggable="false" src="resources/youtube.png"></img>
+					</a>
+				</div>
+				<div class="twitch">
+					<a href="https://twitch.tv/itschase88">
+						<img class="item animated pulse" draggable="false" src="resources/twitch.png"></img>
+					</a>
+				</div>
+				<hr class="spacer"></hr>
 			</div>
-			<div id="refresh">
-				<a href="https://refreshgaming.net"><img class="item animated pulse" draggable="false" src="resources/refresh.png"></img></a>
-			</div>
-			<div id="youtube">
-				<a href="https://www.youtube.com/@Chase88"><img class="item animated pulse" draggable="false" src="resources/youtube.png"></img></a>
-			</div>
-			<div id="twitch">
-				<a href="https://twitch.tv/itschase88"><img class="item animated pulse" draggable="false" src="resources/Twitchiconfosite.png"></img></a>
-			</div>
-	
-			<div id="spacer2">
-		 		<img src="resources/spacer.png" draggable="false"></img>
-			</div>
-		</div>
-	</body>
+		</body>
+	</div>
 </html>
