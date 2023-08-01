@@ -11,21 +11,12 @@
 		<link rel="stylesheet" href="css/animate.min.css">
 		
 		<style>
-			video#bgvid { 
-			    position: fixed;
-			    top: 50%;
-			    left: 70%;
-			    min-width: 100%;
-			    min-height: 100%;
-			    width: auto;
-			    height: auto;
-			    z-index: -100;
-			    -ms-transform: translateX(-50%) translateY(-50%);
-			    -moz-transform: translateX(-50%) translateY(-50%);
-			    -webkit-transform: translateX(-50%) translateY(-50%);
-			    transform: translateX(-50%) translateY(-50%);
-			    background: url(polina.jpg) no-repeat;
-			    background-size: cover; 
+			body {
+			  background: url('resources/bg.png') no-repeat center center fixed;
+			  -webkit-background-size: cover;
+			  -moz-background-size: cover;
+			  -o-background-size: cover;
+			  background-size: cover;
 			}
 			.content {
 				margin: 10%;
@@ -60,27 +51,28 @@
 		</audio>
 
 		<script>
-		   var vAudio = document.getElementById("divAudio");
-		   vAudio.volume = 0.2;
-		   var hasInit = false;
-		   function playMusic()
-		   {
-			  if(!hasInit)
-			  {
-				  hasInit = true;
-				  vAudio.play();
-			  }
-		   }
+			var vAudio = document.getElementById("divAudio");
+			vAudio.volume = 0.2;
+			var hasInit = false;
+			function playMusic() {
+				if(!hasInit) {
+					hasInit = true;
+					vAudio.play();
+				}
+			}
+			
+			setTimeout(function changeBackground() {
+				document.body.style.backgroundImage = "url('resources/openWebsite.gif')";
+			}, 1000)
+			
+			setTimeout(function changeBackground() {
+				document.body.style.backgroundImage = "url('resources/loopWebsite.gif')";
+			}, 5340)
 		</script>
-		
-		<!--Website Video-->
-		<video autoplay muted loop id="bgvid">
-		  <source src="resources/background.mp4" type="video/mp4">
-		</video>
 	</head>
 	
 	<div onclick="playMusic()">
-		<body background="resources/bg.png">
+		<body>
 			<div class="content">
 				<div class="logo">
 					<img class="item animated bounceIn" draggable="false" src="resources/logo.png"></img>
